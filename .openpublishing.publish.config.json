@@ -2,9 +2,9 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
-      "docset_name": "aspnet-core-conceptual",
+      "docset_name": "wumingcp-aspnet-core",
       "build_source_folder": "aspnetcore",
-      "build_output_subfolder": "aspnetcore",
+      "build_output_subfolder": "wumingcp-aspnet-core",
       "locale": "en-us",
       "moniker_ranges": [
         ">= aspnetcore-1.0"
@@ -17,39 +17,38 @@
       },
       "template_folder": "_themes",
       "version": 0
-    },
-    {
-      "docset_name": "wumingcp-aspnet-core",
-      "build_source_folder": "aspnetcore",
-      "build_output_subfolder": "wumingcp-aspnet-core",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
-  "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "need_pr_comments": false,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
+  "branch_target_mapping": {
+    "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "master": [
+      "Publish",
+      "Pdf"
+    ]
+  },
   "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
